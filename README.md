@@ -20,26 +20,26 @@ My source code for 2019 KAKAO BLIND test.
   * 층 : 5층
   * Call : 6개
 
-  |AveWait|AveTravel|AVeTotal|LastTs|Status|
-  |-------|---------|--------|------|------|
-  |2.333|7.333|9.666|16|OK|
-  
+    |AveWait|AveTravel|AVeTotal|LastTs|Status|
+    |-------|---------|--------|------|------|
+    |2.333|7.333|9.666|16|OK|
+
 * 문제 1 (엘리베이터 4개, 수용 8명)
   * 층 : 25층
   * Call : 200개
 
-  |AveWait|AveTravel|AVeTotal|LastTs|Status|
-  |-------|---------|--------|------|------|
-  |25.050|23.095|48.145|592|OK|
+    |AveWait|AveTravel|AVeTotal|LastTs|Status|
+    |-------|---------|--------|------|------|
+    |25.050|23.095|48.145|592|OK|
   
 * 문제 2 (엘리베이터 4개, 수용 8명)
   * 층 : 25층
   * Call : 500개
   * 1층 출입구, 1 13층간 이동 많음
 
-  |AveWait|AveTravel|AVeTotal|LastTs|Status|
-  |-------|---------|--------|------|------|
-  |12.108|17.232|29.340|1868|OK|
+    |AveWait|AveTravel|AVeTotal|LastTs|Status|
+    |-------|---------|--------|------|------|
+    |12.108|17.232|29.340|1868|OK|
   
 ---
 
