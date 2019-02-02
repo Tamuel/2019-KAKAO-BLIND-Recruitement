@@ -37,7 +37,7 @@ My source code for 2019 KAKAO BLIND test.
 * **문제 2 (엘리베이터 4개, 수용 8명)**
   * 층 : 25층
   * Call : 500개
-  * 1층 출입구, 1 13층간 이동 많음
+  * 1층 출입구, 1층과 13층간 이동 많음
 
     |AveWait|AveTravel|AVeTotal|LastTs|Status|
     |-------|---------|--------|------|------|
