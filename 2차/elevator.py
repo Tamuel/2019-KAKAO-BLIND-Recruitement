@@ -133,10 +133,6 @@ def p0_solution():
 
         print("T:", on['timestamp'], token)
 
-        # for p in passengers:
-        #     print("P-ID:", passengers[p].id, ", START:", passengers[p].start, ", END:", passengers[p].end,
-        #           ", TIMESTAMP:", passengers[p].timestamp)
-
         for e in elevators:
             print("E-ID:", elevators[e].id, ", FLOOR:", elevators[e].floor, ", Final DST:", elevators[e].final_destination,
                   ", DST:", list(elevators[e].destination.keys()), ", PASSENGERS:", list(elevators[e].passenger.keys()),
