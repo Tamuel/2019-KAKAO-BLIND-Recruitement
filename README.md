@@ -1,5 +1,5 @@
-# 2019 KAKAO BLIND test
-My source code for 2019 KAKAO BLIND test.
+# 2019 KAKAO BLIND Recruitement
+My source code for 2019 KAKAO BLIND recruitement.
 
 개인적으로 풀어본 2019 KAKAO 블라인드 1차, 2 테스트 C++ 소스코드입니다.
 
