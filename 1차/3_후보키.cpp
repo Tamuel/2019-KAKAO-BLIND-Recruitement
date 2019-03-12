@@ -1,20 +1,11 @@
 #include <iostream>
-#include <string>
 #include <vector>
-#include <map>
-#include <deque>
-#include <algorithm>
-#include <functional>
-#include <iomanip>
 #include <set>
-#include <list>
+#include <string>
 
 using namespace std;
 
-// 2019 1st 5hour
-
-// 3. ÈÄº¸Å°
-void candidateKey() {
+int main() {
 	vector<vector<string>> relation = {
 		{ "100", "ryan", "music", "2" },
 		{ "200", "apeach", "math", "2" },
@@ -23,37 +14,26 @@ void candidateKey() {
 		{ "500", "muzi", "music", "3" },
 		{ "600", "apeach", "music", "2" },
 	};
+	set<int> candidateKey;
+	int check = 0;
 
-	int n_att = relation[0].size();
-	int n_relation = relation.size();
-	vector<int> result;
-	for (int i = 1; i < (1 << n_att); i++) {
-		set<string> checker;
-		for (vector<string> re : relation) {
-			string temp = "";
-			for (int j = 0; j < n_att; j++)
-				if (i & (1 << j))
-					temp += re[j];
+	for (int i = 1; i < (1 << relation[0].size()); i++) {
+		int t;
+		set<vector<string>> checker;
+		for (t = 0; t < relation.size(); t++) {
+			vector<string> temp;
+			for (int c = 0; c < relation[0].size(); c++)
+				if (i & (1 << c)) temp.push_back(relation[t][c]);
 			if (!checker.insert(temp).second)
 				break;
 		}
-
-		if (checker.size() == n_relation) {
-			bool check = true;
-			for (int j : result)
-				if ((j & i) == j) {
-					check = false;
-					break;
-				}
-			if (check) result.push_back(i);
-		}
+		if (t == relation.size())
+			if ((i & check) == 0) {
+				candidateKey.insert(i);
+				check |= i;
+			}
 	}
 
-	cout << result.size() << endl;
-}
-
-int main() {
-	candidateKey();
-
+	cout << candidateKey.size() << endl;
 	return 0;
 }
