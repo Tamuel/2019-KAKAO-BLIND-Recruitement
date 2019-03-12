@@ -26,6 +26,7 @@ int main() {
 	while (nBreak != nBreakPrev) {
 		nBreakPrev = nBreak;
 		vector<pair<int, int>> pos;
+		// Drop black block
 		for (int k = 0; k < 2; k++)
 			for (int j = 0; j < N; j++)
 				for (int i = 1; i < N; i++)
@@ -34,7 +35,8 @@ int main() {
 						pos.push_back({ j, i - 1 });
 						break;
 					}
-
+		
+		// Remove blocks
 		for (pair<int, int>& p : pos) {
 			for (vector<pair<int, int>>& off : offsets) {
 				set<int> checker;
